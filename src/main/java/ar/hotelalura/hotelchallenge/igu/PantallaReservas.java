@@ -20,8 +20,8 @@ import javax.swing.JTextField;
  */
 public class PantallaReservas extends javax.swing.JFrame {
     
-     Date fechaCheckIn = null;
-     Date fechaCheckOut = null;
+     Date fechaCheckIn;
+     Date fechaCheckOut;
      Mensaje mensajeError = null;
     int xMouse, yMouse;
     public PantallaReservas() {
@@ -470,32 +470,35 @@ public class PantallaReservas extends javax.swing.JFrame {
          fechaCheckOut = inputCheckOut.getDate();
          String formaPago = (String) comBoxFormaPago.getSelectedItem();
         
-        if(fechaCheckOut.before(fechaCheckIn)){
-        
-            mensajeError = new Mensaje("ADVERTENCIA","La fecha de check out no puede ser menor a la de check in.");
-            mensajeError.setVisible(true);
-            mensajeError.setLocationRelativeTo(null);
-        
-        }else{
-            if(fechaCheckIn != null && fechaCheckOut !=null && formaPago !=null){
-            double valor = Double.parseDouble(txtValorTotal.getText());
-        
-            Date checkIn = convertirFecha(fechaCheckIn);
-            Date checkOut = convertirFecha(fechaCheckOut);
-            
-            PantallaRegistroHuspedes huesped = new PantallaRegistroHuspedes();
-         
-            huesped.setDatos(checkIn,checkOut,valor,formaPago);
-            huesped.setVisible(true);
-            huesped.setLocationRelativeTo(null);
-            this.dispose();
+         if(fechaCheckOut !=null && fechaCheckIn !=null && formaPago !=null){
+
+             if(fechaCheckOut.before(fechaCheckIn)){
+
+                 mensajeError = new Mensaje("ADVERTENCIA","La fecha de check out no puede ser menor a la de check in.");
+                 mensajeError.setVisible(true);
+                 mensajeError.setLocationRelativeTo(null);
+
+             }else {
+                 double valor = Double.parseDouble(txtValorTotal.getText());
+
+                 Date checkIn = convertirFecha(fechaCheckIn);
+                 Date checkOut = convertirFecha(fechaCheckOut);
+
+                 PantallaRegistroHuspedes huesped = new PantallaRegistroHuspedes();
+
+                 huesped.setDatos(checkIn, checkOut, valor, formaPago);
+                 huesped.setVisible(true);
+                 huesped.setLocationRelativeTo(null);
+                 this.dispose();
+
+             }
         }else{
         
             mensajeError = new Mensaje("ADVERTENCIA","Debe completar todos los campos para continuar.");
             mensajeError.setVisible(true);
             mensajeError.setLocationRelativeTo(null);
         }
-        }
+
         
        
     }//GEN-LAST:event_txtSiguienteMouseClicked
