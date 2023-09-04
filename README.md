@@ -35,8 +35,6 @@ Aplicación de escritorio que permite poder registrar, consultar, editar y elimi
 
 ![Pantalla Reservas_error](https://i.imgur.com/lwIjk40.png)
 
-![Pantalla Reservas_error](https://i.imgur.com/lwIjk40.png)
-
 ![Pantalla Huespedes](https://i.imgur.com/5d5J7rg.gif)
 
 ![Pantalla Busqueda](https://i.imgur.com/B12KScl.gif)
