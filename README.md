@@ -3,7 +3,7 @@
 Aplicación de escritorio que permite poder registrar, consultar, editar y eliminar reservas de un Hotel.
 
 ![Pantalla Inicio](https://i.imgur.com/RksK8RV.png)
-## Caracteristicas
+# Caracteristicas
 
 - Diseño Escritorio.
 - Conexion a base de datos MySQL.
@@ -14,7 +14,7 @@ Aplicación de escritorio que permite poder registrar, consultar, editar y elimi
 
 
 
-## Tecnologias
+# Tecnologias
 
 - [IntelliJ](https://www.jetbrains.com/es-es/idea/)
 - Swing (Interfaz grafica)
@@ -22,12 +22,20 @@ Aplicación de escritorio que permite poder registrar, consultar, editar y elimi
 - [Jcalendar](https://toedter.com/jcalendar/)
 - [MySQL Driver](https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.29)
 - JPA (Mapeo de Entidades)
-## Screenshots
+# Screenshots
+
+
+## Inicio de sesion
+
 
 ![Pantalla Login](https://i.imgur.com/gbyl7p2.gif)
 
 
 ![Pantalla Login_error](https://i.imgur.com/XPL7MOt.png)
+
+
+## Guardar Reservas
+
 
 ![Pantalla Reservas](https://i.imgur.com/Ovhgwo7.gif)
 
@@ -35,7 +43,15 @@ Aplicación de escritorio que permite poder registrar, consultar, editar y elimi
 
 ![Pantalla Reservas_error](https://i.imgur.com/lwIjk40.png)
 
+
+## Registro de huespedes
+
+
 ![Pantalla Huespedes](https://i.imgur.com/5d5J7rg.gif)
+
+
+## Lista de reservas
+
 
 ![Pantalla Busqueda](https://i.imgur.com/B12KScl.gif)
 
@@ -70,3 +86,6 @@ Sentencia para insertar el nombre de usuario y password:
 INSERT INTO usuario (usuario,password) VALUE ("admin","admin123");
 
 Una vez configurado todo, podran darle ReBuild a su proyecto e iniciarlo en su IDE o realizar su JAR correspondiente.
+
+## 🌐 Socials:
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/_.juan.bravo._/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/juan-bravo-7b0930244) 
